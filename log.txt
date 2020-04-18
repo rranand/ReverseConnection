@@ -1,0 +1,16 @@
+***New Connection Established***
+2020-04-18 08:48:35.906850------- IP: 192.168.42.189------- Port: 43455
+Operating System: 'Windows_NT'
+Current WD:  'D:\\Projects\\Python\\ReverseConn'
+Username:  'rrohi'
+***New Connection Established***
+2020-04-18 08:49:04.905949------- IP: 192.168.42.189------- Port: 43455
+Operating System: 'Windows_NT'
+Current WD:  'D:\\Projects\\Python\\ReverseConn'
+Username:  'rrohi'
+2020-04-18 08:49:15.357123------- Success/Command Executed -------hello
+2020-04-18 08:49:15.357123------- Success/Replied -------Message Recieved!!!
+2020-04-18 08:49:18.019910------- Success/Command Executed -------iwefiwief
+2020-04-18 08:49:18.020907------- Success/Replied -------Message Recieved!!!
+2020-04-18 08:49:22.369502------- Success/Command Executed -------exit
+2020-04-18 08:49:22.369502------- Success/Replied -------Message Recieved!!!
