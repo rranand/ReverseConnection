@@ -58,6 +58,7 @@ def select_conn():
                 sys.exit()
         else:
             try:
+                print('**'*30)
                 print('You are connected to IP: ' + str(all_address[c][0]) + ' Port: ' + str(all_address[c][1]))
                 f.write('\n***New Connection Established***\n' + str(datetime.now()) + '------- IP: ' + str(
                     all_address[c][0]) + '-------' + ' Port: ' + str(all_address[c][1]) + '\n')
@@ -140,7 +141,7 @@ def send_query(conn, amt=False, indd=-1):
                         select_conn()
 
                 if command == 'list':
-                    print('*'*30)
+                    print('**'*30)
                     create()
                 else:
                     f.write(
@@ -195,9 +196,7 @@ else:
 
 host = ''
 port = 9898
-count = 0
 data = []
-choosed = False
 all_connections = []
 all_address = []
 s = socket.socket()
